@@ -28,9 +28,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
-
 ALLOWED_HOSTS = ["mb2test.herokuapp.com", "localhost"]
+
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 # Application definition
 
@@ -159,4 +159,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-ACCOUNT_EMAIL_VERIFICATION = 'none'
